@@ -4,7 +4,7 @@ import LoginPage from "./pages/LoginPage";
 import ProfilePage from "./pages/ProfilePage";
 
 
-function App() {
+function App() {   
   return (
     <div className="bg-[url('./src/assets/bgImage.svg')] bg-container">
 
@@ -14,7 +14,11 @@ function App() {
         <Route path="/Profile" element={<ProfilePage />} />
     </Routes >
      </div>
-  );
+  );                     
 }
 
 export default App;
+
+
+
+
