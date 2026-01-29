@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 import cors from "cors";
 import http from "http";
 
-// Load environment variables
+
 dotenv.config();
 
 // Create express app
