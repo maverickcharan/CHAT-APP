@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from "react-router";
+
 
 import HomePage from "./pages/HomePage.jsx";
 import SignUpPage from "./pages/SignUpPage.jsx";
@@ -14,6 +14,7 @@ import PageLoader from "./components/PageLoader.jsx";
 import useAuthUser from "./hooks/useAuthUser.js";
 import Layout from "./components/Layout.jsx";
 import { useThemeStore } from "./store/useThemeStore.js";
+import { Navigate, Route, Routes } from "react-router";
 
 const App = () => {
   const { isLoading, authUser } = useAuthUser();
@@ -101,6 +102,8 @@ const App = () => {
             )
           }
         />
+        <Route path="*" element={<h1>Page Not Found</h1>} />
+
       </Routes>
 
       <Toaster />
